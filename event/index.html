@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Sample</title>
+  </head>
+  <body>
+    <div class="" id="app">
+      {{ message }}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <script type="text/javascript">
+      new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue.js!'
+        },
+        beforeCreate: function() {
+          console.log("beforeCreate");
+        },
+        created: function() {
+          console.log("Created");
+        },
+        mounted: function() {
+          console.log("Mounted");
+          this.message = 'Hello Vue2!';
+        },
+        updated: function() {
+          console.log("bUpdated");
+        }
+      });
+    </script>
+
+  </body>
+</html>

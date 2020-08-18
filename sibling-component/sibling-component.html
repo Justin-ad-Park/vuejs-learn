@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Sample</title>
+  </head>
+  <body>
+    <div class="" id="app">
+      <div>{{ message }}</div>
+      <child-component v-bind:propsdata="message"></child-component>
+      <sibling-component v-bind:sbdata="anotherMessage"></sibling-component>
+
+    </div>
+    <script src="../vuejs/vue.js"></script>
+    <script src="sibling.js"></script>
+  </body>
+</html>
